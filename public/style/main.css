@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  --bs-nav-link-hover-color: white;
+}
+
+.homeBtn {
+  --bs-nav-pills-link-active-bg: white;
+}
+
+.footer {
+  flex-direction: column-reverse;
+}
+
+form{
+  margin-left:70.47px;
+}
+
+.contents {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  flex: 1;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 1000px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: height 0.3s ease; /* Smooth transition for height changes */
+}
+
+.input-content {
+  height: 500px;
+  resize: none; /* Allow vertical resizing */
+  align-items: flex-start; /* Align content to the start (top) */
+  text-align:start;
+}
+
+item-list{
+  height:1000px;
+}
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,14 @@
+<body class="gradient-background">
+  <%- include("./partials/header.ejs") %>
+    <div class="contents">
+      <p>Write your contents below 👇</p>
+      <form action="/submit" method="POST">
+        <input type="text" name="title" placeholder="Title" class="input">
+        <input type="submit" value="posting"><br>
+        <!-- <input type="text" name="content" class="input input-content my-2"> -->
+        <textarea type="text" name="content" class="input input-content my-2">여기에 텍스트를 입력합니다!</textarea>
+      </form>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
